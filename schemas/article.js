@@ -1,9 +1,9 @@
 export default {
   title: 'Article',
   name: 'article',
-  type: 'document',
+  type: 'object',
   validation: Rule => Rule.custom(fields => {
-    if (!fields.link && !fields.pdf) return "You must provide either a link or PDF"
+    if (!fields.link && !fields.pdf) return "Each article requires a link or PDF"
     return true
   }),
   fields: [

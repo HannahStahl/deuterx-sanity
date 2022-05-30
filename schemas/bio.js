@@ -1,7 +1,7 @@
 export default {
   title: 'Bio',
   name: 'bio',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       title: 'Name',
@@ -49,4 +49,10 @@ export default {
       validation: Rule => Rule.required(),
     },
   ],
+  preview: {
+    select: {
+      title: 'name',
+      media: 'photo',
+    }
+  }
 }

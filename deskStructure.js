@@ -1,13 +1,14 @@
 import S from '@sanity/desk-tool/structure-builder'
-import schemas from './schemas'
 
-export default () =>
-  S.list()
+const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1);
+
+export default () => {
+  const pages = ['news', 'leadership'];
+  return S.list()
     .title('Content')
-    .items(
-      schemas.map(({ name, title }) =>
-        S.listItem().title(`${title}s`).child(
-          S.documentTypeList(name).title(`${title}s`)
-        )
-      ),
-    );
+    .items(pages.map((page) => (
+      S.listItem()
+        .title(capitalize(page))
+        .child(S.editor().schemaType(page).documentId(page).title(capitalize(page)))
+    )));
+};
