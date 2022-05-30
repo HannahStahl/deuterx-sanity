@@ -9,7 +9,6 @@ export default {
       name: 'articles',
       type: 'array',
       of: [{ type: 'article' }],
-      options: { sortable: false },
       validation: Rule => Rule.required(),
     },
     {
@@ -17,7 +16,6 @@ export default {
       name: 'publications',
       type: 'array',
       of: [{ type: 'publication' }],
-      options: { sortable: false },
       validation: Rule => Rule.required(),
     },
   ],
