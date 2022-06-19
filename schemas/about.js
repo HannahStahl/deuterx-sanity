@@ -2,6 +2,7 @@ export default {
   title: 'About',
   name: 'about',
   type: 'document',
+  __experimental_actions: ['update', 'publish'],
   fields: [
     {
       title: 'Summary',

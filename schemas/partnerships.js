@@ -2,6 +2,7 @@ export default {
   title: 'Partnerships',
   name: 'partnerships',
   type: 'document',
+  __experimental_actions: ['update', 'publish'],
   fields: [
     {
       title: 'Sections',
