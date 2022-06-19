@@ -1,14 +1,8 @@
 export default {
-  title: 'Bio',
-  name: 'bio',
+  title: 'Partnerships Section',
+  name: 'partnershipsSection',
   type: 'object',
   fields: [
-    {
-      title: 'Name',
-      name: 'name',
-      type: 'string',
-      validation: Rule => Rule.required(),
-    },
     {
       title: 'Title',
       name: 'title',
@@ -16,20 +10,8 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      title: 'Photo',
-      name: 'photo',
-      type: 'image',
-      validation: Rule => Rule.required(),
-    },
-    {
-      title: 'Link',
-      name: 'link',
-      type: 'url',
-      validation: Rule => Rule.required(),
-    },
-    {
-      title: 'Bio',
-      name: 'bio',
+      title: 'Content',
+      name: 'content',
       type: 'array',
       of: [
         {
@@ -49,10 +31,4 @@ export default {
       validation: Rule => Rule.required(),
     },
   ],
-  preview: {
-    select: {
-      title: 'name',
-      media: 'photo',
-    }
-  }
 }
