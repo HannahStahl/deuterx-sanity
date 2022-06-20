@@ -37,4 +37,9 @@ export default {
       type: 'file',
     },
   ],
+  preview: {
+    select: {
+      title: 'title',
+    }
+  }
 }
