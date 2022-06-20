@@ -7,7 +7,8 @@ export default {
     {
       title: 'Intro',
       name: 'intro',
-      type: 'string',
+      type: 'text',
+      rows: 2,
       validation: Rule => Rule.required(),
     },
     {
