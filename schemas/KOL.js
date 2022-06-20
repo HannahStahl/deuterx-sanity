@@ -1,7 +1,7 @@
 export default {
   title: 'KOL',
   name: 'KOL',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       title: 'Name',

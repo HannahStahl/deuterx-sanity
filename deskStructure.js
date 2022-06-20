@@ -5,27 +5,32 @@ import schemas from './schemas'
 const singletons = {
   home: true,
   about: true,
+  leadership: true,
   partnerships: true,
 };
 
-const titleOverrides = {
-  managementTeamMember: 'Management Team',
+const hidden = {
+  managementTeamMember: true,
 };
 
 export default () => (
   S.list()
     .title('Content')
-    .items(schemas.filter(({ type }) => type === 'document').map(({ name, title: defaultTitle }) => {
-      const isSingleton = singletons[name];
-      const title = titleOverrides[name] || `${defaultTitle}${isSingleton ? '' : 's'}`;
-      return (
-        S.listItem()
-          .title(title)
-          .icon(isSingleton ? GrDocument : undefined)
-          .child(
-            isSingleton
-              ? S.editor().schemaType(name).documentId(name).title(title)
-              : S.documentTypeList(name).title(title))
-      );
-  }))
+    .items(
+      schemas
+        .filter(({ type, name }) => type === 'document' && !hidden[name])
+        .map(({ name, title: defaultTitle }) => {
+          const isSingleton = singletons[name];
+          const title = `${defaultTitle}${isSingleton ? '' : 's'}`;
+          return (
+            S.listItem()
+              .title(title)
+              .icon(isSingleton ? GrDocument : undefined)
+              .child(
+                isSingleton
+                  ? S.editor().schemaType(name).documentId(name).title(title)
+                  : S.documentTypeList(name).title(title))
+          );
+        })
+    )
 );

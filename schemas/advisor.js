@@ -1,7 +1,7 @@
 export default {
   title: 'Advisor',
   name: 'advisor',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       title: 'Name',
