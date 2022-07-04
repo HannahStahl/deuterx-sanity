@@ -16,7 +16,7 @@ export const portableText = [
           value: 'sup',
           blockEditor: {
             icon: () => <div>⤴</div>,
-            render: ({ children }) => <span><sup>{children}</sup></span>,
+            render: ({ children }) => <sup>{children}</sup>,
           }
         },
       ]
