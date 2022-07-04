@@ -11,5 +11,18 @@ export default {
       of: [{ type: 'partnershipsSection' }],
       validation: Rule => Rule.required(),
     },
+    {
+      title: 'Phone Number',
+      name: 'phone',
+      type: 'string',
+      validation: Rule => Rule.required(),
+    },
+    {
+      title: 'Address',
+      name: 'address',
+      type: 'text',
+      rows: 3,
+      validation: Rule => Rule.required(),
+    },
   ],
 }
