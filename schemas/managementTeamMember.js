@@ -1,3 +1,5 @@
+import { portableText } from "../util";
+
 export default {
   title: 'Management Team Member',
   name: 'managementTeamMember',
@@ -31,21 +33,7 @@ export default {
       title: 'Bio',
       name: 'bio',
       type: 'array',
-      of: [
-        {
-          type: 'block',
-          styles: [
-            { title: 'Normal', value: 'normal' },
-          ],
-          marks: {
-            decorators: [
-              { title: 'Strong', value: 'strong' },
-              { title: 'Emphasis', value: 'em' },
-              { title: 'Underline', value: 'underline' }
-            ]
-          },
-        },
-      ],
+      of: portableText,
       validation: Rule => Rule.required(),
     },
   ],
