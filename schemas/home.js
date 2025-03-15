@@ -7,6 +7,18 @@ export default {
   __experimental_actions: ['update', 'publish'],
   fields: [
     {
+      title: 'Title',
+      name: 'title',
+      type: 'string',
+      validation: Rule => Rule.required(),
+    },
+    {
+      title: 'Subtitle',
+      name: 'subtitle',
+      type: 'string',
+      validation: Rule => Rule.required(),
+    },
+    {
       title: 'Intro',
       name: 'intro',
       type: 'text',
