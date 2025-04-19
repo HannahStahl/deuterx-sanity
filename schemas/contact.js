@@ -2,7 +2,7 @@ export default {
   title: 'Contact',
   name: 'contact',
   type: 'document',
-  // __experimental_actions: ['update', 'publish'], // TODO uncomment once content is published in prod
+  __experimental_actions: ['update', 'publish'],
   fields: [
     {
       title: 'Phone Number',
