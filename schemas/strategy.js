@@ -1,7 +1,7 @@
 import { portableText } from '../util';
 
 export default {
-  title: 'About',
+  title: 'Strategy',
   name: 'about',
   type: 'document',
   __experimental_actions: ['update', 'publish'],
