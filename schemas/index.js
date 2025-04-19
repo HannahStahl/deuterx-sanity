@@ -12,14 +12,14 @@ import strategy from './strategy'
 
 export default [
   home,
-  strategy,
-  publication,
-  article,
   about,
   managementTeamMember,
   advisor,
   KOL,
   consultant,
+  strategy,
+  publication,
+  article,
   partnerships,
   partnershipsSection,
 ]

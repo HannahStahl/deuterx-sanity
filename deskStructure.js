@@ -4,8 +4,8 @@ import schemas from './schemas'
 
 const singletons = {
   home: true,
-  about: true,
   leadership: true,
+  about: true,
   partnerships: true,
 };
 
