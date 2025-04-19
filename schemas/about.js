@@ -1,5 +1,5 @@
 export default {
-  title: 'Leadership',
+  title: 'About',
   name: 'leadership',
   type: 'document',
   __experimental_actions: ['update', 'publish'],
