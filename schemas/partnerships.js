@@ -11,6 +11,7 @@ export default {
       of: [{ type: 'partnershipsSection' }],
       validation: Rule => Rule.required(),
     },
+    // TODO remove these once Contact content is published in prod:
     {
       title: 'Phone Number',
       name: 'phone',

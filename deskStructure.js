@@ -7,6 +7,7 @@ const singletons = {
   leadership: true,
   about: true,
   partnerships: true,
+  contact: true,
 };
 
 const hidden = {

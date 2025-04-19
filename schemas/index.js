@@ -2,6 +2,7 @@ import about from './about'
 import advisor from './advisor'
 import article from './article'
 import consultant from './consultant'
+import contact from './contact'
 import home from './home'
 import KOL from './KOL'
 import managementTeamMember from './managementTeamMember'
@@ -22,4 +23,5 @@ export default [
   article,
   partnerships,
   partnershipsSection,
+  contact,
 ]
